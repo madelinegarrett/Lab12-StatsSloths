@@ -80,7 +80,7 @@ perm_cor <- function(perms = 1000, x, y)
     # Step 3:
     # Compute the correlation between x and the randomly mixed
     # up y-vector. Store this value in the vector from step 1.
-   correlation_value <- cor.test(x, GDP_Sample)
+   correlation_value <- cor(x, GDP_Sample)
    means[i] <- correlation_value
   }
   

@@ -52,10 +52,13 @@ perm_mean <- function(perms = 1000, values, n1)
   
 }
 
-life_exp <- gapminder %>%
+new_data <- gapminder_unfiltered
+life_exp <- new_data %>%
   filter(continent == "Asia" | continent == "Europe")
-  
-perm_mean(1000, life_exp$lifeExp, 396)
+mean_vals <- perm_mean(1000, life_exp$lifeExp, 578)
+mean_data <- data_frame(mean_vals)
+ggplot(data = mean_data) +
+  geom_histogram(mapping = aes(x = mean_vals), binwidth = .02)
 ```
 
 ```{r}

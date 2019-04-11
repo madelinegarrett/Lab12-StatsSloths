@@ -61,8 +61,7 @@ perm_cor <- function(perms = 1000, x, y)
   # x: Vector 1 - for computing correlation
   # y: Vector 2 - for computing correlation
   ###############
-  x <- vector(mode = "double", length = 
-  y <- vector(mode = "double", length = 
+ 
   # Step 1:
   # Create vector of zeroes of length "perms" to store
   # permuted mean differnces

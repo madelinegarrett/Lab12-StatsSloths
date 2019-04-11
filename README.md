@@ -76,7 +76,7 @@ perm_cor <- function(perms = 1000, x, y)
     # Compute the correlation between x and the randomly mixed
     # up y-vector. Store this value in the vector from step 1.
    correlation_value <- cor.test(x, y)
-   means[i] <- correlation_values
+   means[i] <- correlation_value
   }
   
   # Step 4:

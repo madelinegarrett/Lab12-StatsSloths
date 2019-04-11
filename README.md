@@ -71,11 +71,11 @@ perm_cor <- function(perms = 1000, x, y)
   {
     # Step 2:
     # Randomly mix up the values in the vector "y"
-    GDP_Samples <- sample(values, y)
+    GDP_Sample <- sample(values, y)
     # Step 3:
     # Compute the correlation between x and the randomly mixed
     # up y-vector. Store this value in the vector from step 1.
-   correlation_value <- cor.test(x, y)
+   correlation_value <- cor.test(x, GDP_Sample)
    means[i] <- correlation_value
   }
   

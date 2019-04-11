@@ -51,6 +51,11 @@ perm_mean <- function(perms = 1000, values, n1)
   means
   
 }
+
+life_exp <- gapminder %>%
+  filter(continent == "Asia" || continent == "Europe")
+  
+perm_mean(1000, life_exp$lifeExp, 396)
 ```
 
 ```{r}

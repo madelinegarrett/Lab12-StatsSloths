@@ -69,11 +69,11 @@ perm_cor <- function(perms = 1000, x, y)
   # x: Vector 1 - for computing correlation
   # y: Vector 2 - for computing correlation
   ###############
- 
+  
   # Step 1:
   # Create vector of zeroes of length "perms" to store
   # permuted mean differnces
-  means <- vector(mode = "double", length = perms)
+  corrs <- vector(mode = "double", length = perms)
   # Loop throught number of permutations
   for (i in c(1:perms))
   {
@@ -83,13 +83,13 @@ perm_cor <- function(perms = 1000, x, y)
     # Step 3:
     # Compute the correlation between x and the randomly mixed
     # up y-vector. Store this value in the vector from step 1.
-   correlation_value <- cor(x, GDP_Sample)
-   means[i] <- correlation_value
+    correlation_value <- cor(x, GDP_Sample)
+    corrs[i] <- correlation_value
   }
   
   # Step 4:
   # Return new updated vector, created in step 1
-  means
+  corrs
 }
 
 perm_cor(1000, new_data$pop, new_data$gdpPercap)

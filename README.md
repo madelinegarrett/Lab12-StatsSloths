@@ -61,11 +61,12 @@ perm_cor <- function(perms = 1000, x, y)
   # x: Vector 1 - for computing correlation
   # y: Vector 2 - for computing correlation
   ###############
-  
+  x <- vector(mode = "double", length = 
+  y <- vector(mode = "double", length = 
   # Step 1:
   # Create vector of zeroes of length "perms" to store
   # permuted mean differnces
-  population_means <- vector(mode = "double", length = perms
+  population_means <- vector(mode = "double", length = perms)
   # Loop throught number of permutations
   for (i in c(1:perms))
   {
@@ -75,7 +76,8 @@ perm_cor <- function(perms = 1000, x, y)
     # Step 3:
     # Compute the correlation between x and the randomly mixed
     # up y-vector. Store this value in the vector from step 1.
-    cor.test(x, y)
+   correlation_values <- cor.test(x, y)
+   population_means[i] <- correlation_values
   }
   
   # Step 4:

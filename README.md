@@ -65,22 +65,22 @@ perm_cor <- function(perms = 1000, x, y)
   # Step 1:
   # Create vector of zeroes of length "perms" to store
   # permuted mean differnces
-  
+  population_means <- vector(mode = "double", length = perms
   # Loop throught number of permutations
   for (i in c(1:perms))
   {
     # Step 2:
     # Randomly mix up the values in the vector "y"
-    
+    gDP_Samples <- sample(values, y)
     # Step 3:
     # Compute the correlation between x and the randomly mixed
     # up y-vector. Store this value in the vector from step 1.
-    
+    cor.test(x, y)
   }
   
   # Step 4:
   # Return new updated vector, created in step 1
-  
+  population_means
 }
 ```
 

@@ -92,7 +92,10 @@ perm_cor <- function(perms = 1000, x, y)
   corrs
 }
 
-perm_cor(1000, new_data$pop, new_data$gdpPercap)
+corr_vals <- perm_cor(1000, new_data$pop, new_data$gdpPercap)
+corr_data <- data_frame(corr_vals)
+ggplot(data = corr_data) +
+  geom_histogram(mapping = aes(x = corr_vals), binwidth = .001)
 ```
 
 2. Create Plots that Visually show result of these statistical tests on your two questions.

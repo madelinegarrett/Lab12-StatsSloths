@@ -91,6 +91,8 @@ perm_cor <- function(perms = 1000, x, y)
   # Return new updated vector, created in step 1
   means
 }
+
+perm_cor(1000, new_data$pop, new_data$gdpPercap)
 ```
 
 2. Create Plots that Visually show result of these statistical tests on your two questions.

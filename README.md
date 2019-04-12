@@ -9,6 +9,25 @@ gapminder
  a. Answered with the two-sample mean permutation test
  b. Other with the correlation permutation test.
 
+```{r}
+dataA <- gapminder_unfiltered %>%
+  filter(continent =="Asia")
+dataA
+
+mean(data[["lifeExp"]])
+#  Asia Life Expectancy is 62.41587
+
+dataE <- gapminder_unfiltered %>%
+  filter(continent =="Europe")
+dataE
+
+mean(dataE[["lifeExp"]])
+# Europe Life Expectancy is 72.72164
+
+72.164-62.41587
+# Mean difference is 9.74813
+```
+
 
 ```{r}
 perm_mean <- function(perms = 1000, values, n1)

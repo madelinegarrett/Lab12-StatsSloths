@@ -81,6 +81,11 @@ ggplot(data = mean_data) +
 ```
 ## Is there a significant correlation between GDP per capita and population? 
 ```{r}
+cor(gapminder_unfiltered$pop, gapminder_unfiltered$gdpPercap)
+
+# Original correlation is -0.04595259
+```
+```{r}
 perm_cor <- function(perms = 1000, x, y)
 {
   ## Variables ##

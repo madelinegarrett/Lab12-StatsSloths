@@ -81,6 +81,7 @@ ggplot(data = mean_data) +
   ggtitle("Distribution of Means For Europe and Asia Life Expectancy")
 ```
 ## Is there a significant correlation between GDP per capita and population? 
+* This question is important because it can show us if a higher or lower GDP per capita results in a higher or lower population. We can use this information to determine if a larger or smaller population results in a better or worse standard of living.
 ```{r}
 cor(gapminder_unfiltered$pop, gapminder_unfiltered$gdpPercap)
 

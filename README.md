@@ -122,16 +122,16 @@ corr_vals <- perm_cor(1000, new_data$pop, new_data$gdpPercap)
 corr_data <- data_frame(corr_vals)
 ggplot(data = corr_data) +
   geom_histogram(mapping = aes(x = corr_vals), binwidth = .001)+
-  geom_vline(xintercept = -0.04595259, col=c("blue")) +
+  geom_vline(xintercept = -0.04595259, col=c("orange")) +
   ggtitle("Distribution of Correlation Values For GDP per Capita and Population")
 ```
 3. Conclusion 
 a. Use percentiles, summary statistics (max, min), and probabilites (p-values)
-* Life Expectancy Conclusion: Before computing the two-sample permuation tests, the difference in life expectancy means for Asia and Europe was 9.74813. This can be see as an orange vertical line on the graph. After comptuing the tests, the computed mean differences were all relatively close to 0. From this we can conclude that group labels can be mixed and still produce similar results. Our distribution stretched from a mean value -1.25 to 1.25 and appears to be a normal distribution.
-* GDP per Capita and Population Conclusion: Before computing the correlation permutation test, the correlation value between population and GDP per capita was -0.04595259. This is represented by the blue line. After running the permutations, the correlation values were all extremelyt close to zero, indicating that the two variables are not very closely correlated. The max correlation value was 0.06595018 while the min was -0.05458713.
+* Life Expectancy Conclusion: Before computing the two-sample permuation tests, the difference in life expectancy means for Asia and Europe was 9.74813. This can be see as an orange vertical line on the graph. After comptuing the tests, the computed mean differences were all close to 0. From this we can conclude that group labels can be mixed and still produce similar results. Our distribution stretched from a mean value -1.25 to 1.25 and appears to be a normal distribution.
+* GDP per Capita and Population Conclusion: Before computing the correlation permutation test, the correlation value between population and GDP per capita was -0.04595259. This number falls on the tail end on the lower percentiles with most of the data being above -0.04595259 and right around 0 is where most of the data falls which means that there is either no correlation between GDP per capita and population or only a weak positive correlation between GDP per capita and population with the original correlation of -0.04595259 being a weak negative correlation between GDP per capita and Population.
 
 ### Team Summary
-* I, Madeline Garrett, helped to calculate the original values for each question and worked on the conclusions.
+* I, Madeline Garrett,
 * I, Kevin Luth, helped to create the code for the perm_mean and perm_cor functions. I also helped to plot the distribution values.
 * I, Katie Stewart, worked to explain why our chosen questions were important and potential questions their answers could lead to. I also worked with Madeline to interpret our results and to form a clean, cohesive conclusion.
 * I, Zandy Boone, helped create the perm_cor function and helped on the perm_mean function and helped come up with some questions to answer.

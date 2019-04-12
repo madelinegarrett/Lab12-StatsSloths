@@ -128,7 +128,7 @@ ggplot(data = corr_data) +
 3. Conclusion 
 a. Use percentiles, summary statistics (max, min), and probabilites (p-values)
 * Life Expectancy Conclusion: Before computing the two-sample permuation tests, the difference in life expectancy means for Asia and Europe was 9.74813. This can be see as an orange vertical line on the graph. After comptuing the tests, the computed mean differences were all relatively close to 0. From this we can conclude that group labels can be mixed and still produce similar results. Our distribution stretched from a mean value -1.25 to 1.25 and appears to be a normal distribution.
-* GDP per Capita and Population Conclusion: Before computing the correlation permutation test, the correlation value between population and GDP per capita was -0.04595259. This number falls on the tail end on the lower percentiles with most of the data being above -0.04595259 and right around 0 is where most of the data falls indicating that the two variables are not very closely correlated. The max correlation value was 0.06595018 while the min was -0.05458713.
+* GDP per Capita and Population Conclusion: Before computing the correlation permutation test, the correlation value between population and GDP per capita was -0.04595259. This is represented by the blue line. This number falls on the tail end on the lower percentiles with most of the data being above -0.04595259 and right around 0 is where most of the data falls indicating that the two variables are not very closely correlated. The max correlation value was 0.06595018 while the min was -0.05458713.
 
 ### Team Summary
 * I, Madeline Garrett,

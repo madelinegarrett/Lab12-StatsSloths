@@ -5,7 +5,7 @@ gapminder
 ```
 
 
-## Is there a signifigant  difference in the life expectancy in Asia and in Europe? 
+## Is there a significant difference in the life expectancy in Asia and in Europe? 
 
 ```{r}
 dataA <- gapminder_unfiltered %>%
@@ -77,7 +77,7 @@ mean_data <- data_frame(mean_vals)
 ggplot(data = mean_data) +
   geom_histogram(mapping = aes(x = mean_vals), binwidth = .02)
 ```
-## Is there a signifigant correlation between GDP per capita and population? 
+## Is there a significant correlation between GDP per capita and population? 
 ```{r}
 perm_cor <- function(perms = 1000, x, y)
 {
@@ -114,9 +114,6 @@ corr_data <- data_frame(corr_vals)
 ggplot(data = corr_data) +
   geom_histogram(mapping = aes(x = corr_vals), binwidth = .001)
 ```
-
-2. Create Plots that Visually show result of these statistical tests on your two questions.
-
 3. Conclusion 
 a. Use percentiles, summary statistics (max, min), and probabilites (p-values)
 

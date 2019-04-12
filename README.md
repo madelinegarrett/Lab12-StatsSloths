@@ -131,7 +131,7 @@ a. Use percentiles, summary statistics (max, min), and probabilites (p-values)
 * GDP per Capita and Population Conclusion: Before computing the correlation permutation test, the correlation value between population and GDP per capita was -0.04595259. This is represented by the blue line. After running the permutations, the correlation values were all extremelyt close to zero, indicating that the two variables are not very closely correlated. The max correlation value was 0.06595018 while the min was -0.05458713.
 
 ### Team Summary
-* I, Madeline Garrett,
+* I, Madeline Garrett, helped to calculate the original values for each question and worked on the conclusions.
 * I, Kevin Luth, helped to create the code for the perm_mean and perm_cor functions. I also helped to plot the distribution values.
 * I, Katie Stewart, worked to explain why our chosen questions were important and potential questions their answers could lead to. I also worked with Madeline to interpret our results and to form a clean, cohesive conclusion.
 * I, Zandy Boone, helped create the perm_cor function and helped on the perm_mean function and helped come up with some questions to answer.

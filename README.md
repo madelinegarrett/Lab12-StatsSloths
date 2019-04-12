@@ -126,6 +126,7 @@ ggplot(data = corr_data) +
 ```
 3. Conclusion 
 a. Use percentiles, summary statistics (max, min), and probabilites (p-values)
+* Life Expectancy Conclusion:
 
 ### Team Summary
 * I, Madeline Garrett,

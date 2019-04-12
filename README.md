@@ -5,9 +5,7 @@ gapminder
 ```
 
 
-1. Two specific questions of interest and why important and interesting 
- a. Answered with the two-sample mean permutation test
- b. Other with the correlation permutation test.
+## Is there a signifigant  difference in the life expectancy in Asia and in Europe? 
 
 ```{r}
 dataA <- gapminder_unfiltered %>%
@@ -79,7 +77,7 @@ mean_data <- data_frame(mean_vals)
 ggplot(data = mean_data) +
   geom_histogram(mapping = aes(x = mean_vals), binwidth = .02)
 ```
-
+## Is there a signifigant correlation between GDP per capita and population? 
 ```{r}
 perm_cor <- function(perms = 1000, x, y)
 {

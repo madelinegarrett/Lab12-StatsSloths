@@ -5,7 +5,8 @@ gapminder
 ```
 
 
-## Is there a significant difference in the life expectancy in Asia and in Europe? 
+## Is there a significant difference in the life expectancy in Asia and in Europe?
+* This question is important because if there is an significant difference it may lead to other questions and investigation into what makes life expectancy higher on one continent and lower on another.
 
 ```{r}
 dataA <- gapminder_unfiltered %>%

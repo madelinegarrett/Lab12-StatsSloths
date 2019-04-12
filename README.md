@@ -122,7 +122,7 @@ corr_vals <- perm_cor(1000, new_data$pop, new_data$gdpPercap)
 corr_data <- data_frame(corr_vals)
 ggplot(data = corr_data) +
   geom_histogram(mapping = aes(x = corr_vals), binwidth = .001)+
-  ggtitle("Distribution of Correlation Values For GDP per Capita and Population?")
+  ggtitle("Distribution of Correlation Values For GDP per Capita and Population")
 ```
 3. Conclusion 
 a. Use percentiles, summary statistics (max, min), and probabilites (p-values)

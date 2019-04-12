@@ -129,7 +129,7 @@ a. Use percentiles, summary statistics (max, min), and probabilites (p-values)
 
 ### Team Summary
 * I, Madeline Garrett,
-* I, Kevin Luth,
+* I, Kevin Luth, helped to create the code for the perm_mean and perm_cor functions. I also helped to plot the distribution values.
 * I, Katie Stewart, worked to explain why our chosen questions were important and potential questions their answers could lead to. I also worked with Madeline to interpret our results and to form a clean, cohesive conclusion.
 * I, Zandy Boone, 
 

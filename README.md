@@ -126,7 +126,7 @@ ggplot(data = corr_data) +
 ```
 3. Conclusion 
 a. Use percentiles, summary statistics (max, min), and probabilites (p-values)
-* Life Expectancy Conclusion: Before computing the two-sample permuation tests, the difference in life expectancy means for Asia and Europe was 9.74813. This can be see as an orange vertical line on the graph. After comptuing the tests, the computed mean difference was 0. From this we can conclude that group labels can be mixed and still produce similar results. Our distribution stretched from a mean value -1.25 to 1.25 and appears to be a normal distribution.
+* Life Expectancy Conclusion: Before computing the two-sample permuation tests, the difference in life expectancy means for Asia and Europe was 9.74813. This can be see as an orange vertical line on the graph. After comptuing the tests, the computed mean differences were all close to 0. From this we can conclude that group labels can be mixed and still produce similar results. Our distribution stretched from a mean value -1.25 to 1.25 and appears to be a normal distribution.
 * GDP per Capita and Population Conclusion:
 
 ### Team Summary

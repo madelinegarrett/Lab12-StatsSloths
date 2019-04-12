@@ -75,7 +75,9 @@ life_exp <- new_data %>%
 mean_vals <- perm_mean(1000, life_exp$lifeExp, 578)
 mean_data <- data_frame(mean_vals)
 ggplot(data = mean_data) +
-  geom_histogram(mapping = aes(x = mean_vals), binwidth = .02)
+  geom_histogram(mapping = aes(x = mean_vals), binwidth = .02)+ 
+   geom_vline(xintercept =9.4578, col=c("orange")) +
+  ggtitle("Distribution of Means For Europe and Asia Life Expectancy")
 ```
 ## Is there a significant correlation between GDP per capita and population? 
 ```{r}
@@ -112,7 +114,8 @@ perm_cor <- function(perms = 1000, x, y)
 corr_vals <- perm_cor(1000, new_data$pop, new_data$gdpPercap)
 corr_data <- data_frame(corr_vals)
 ggplot(data = corr_data) +
-  geom_histogram(mapping = aes(x = corr_vals), binwidth = .001)
+  geom_histogram(mapping = aes(x = corr_vals), binwidth = .001)+
+  ggtitle("Distribution of Correlation Values For GDP per Capita and Population?")
 ```
 3. Conclusion 
 a. Use percentiles, summary statistics (max, min), and probabilites (p-values)

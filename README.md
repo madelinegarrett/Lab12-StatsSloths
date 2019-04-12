@@ -127,8 +127,11 @@ ggplot(data = corr_data) +
 3. Conclusion 
 a. Use percentiles, summary statistics (max, min), and probabilites (p-values)
 
-
-
+### Team Summary
+* I, Madeline Garrett,
+* I, Kevin Luth,
+* I, Katie Stewart, worked to explain why our chosen questions were important and potential questions their answers could lead to. I also worked with Madeline to interpret our results and to form a clean, cohesive conclusion.
+* I, Zandy Boone, 
 
 
 
